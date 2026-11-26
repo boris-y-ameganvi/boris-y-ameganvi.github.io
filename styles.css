@@ -874,6 +874,22 @@ a:hover { color: var(--navy); }
 }
 .gallery-intro { margin: -1rem 0 2rem; max-width: 40rem; color: var(--muted); }
 
+.gallery:not(.is-expanded) .gallery-extra { display: none; }
+.gallery-toggle {
+  display: block;
+  margin: 1.6rem auto 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .gallery.is-expanded .gallery-extra {
+    animation: gallery-reveal 0.4s ease both;
+  }
+}
+@keyframes gallery-reveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+
 /* Lightbox */
 .lightbox {
   position: fixed;
