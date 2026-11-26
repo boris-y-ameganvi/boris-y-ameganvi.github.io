@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boris-y-ameganvi.github.io/sitemap.xml
